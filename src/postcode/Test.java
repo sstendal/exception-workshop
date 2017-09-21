@@ -8,11 +8,11 @@ public class Test {
 
         while (true) {
 
-            String namesInput = Console.read("Name(s):");
+            String PostcodesInput = Console.read("Postcodes(s):");
 
-            String[] names = namesInput.split(",");
+            String[] postcodes = PostcodesInput.split(",");
 
-            Arrays.stream(names).forEach(postcode -> {
+            Arrays.stream(postcodes).forEach(postcode -> {
                 try {
 
                     String city = PostcodeService.city(postcode);
